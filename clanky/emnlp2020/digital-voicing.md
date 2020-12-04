@@ -4,6 +4,12 @@ David Gaddy a Dan Klein
 
 EMNLP 2020 Best Paper Award
 
+## Krátká verze
+
+Digital Voicing of Silent Speech (https://arxiv.org/abs/2010.02960): dělali ozvučení nahrávky řeči podle signálů EMG (elektrody na obličeji), ale jenom tiché řeči, tj. artikulované. Protože v tom případě nemáš žádnou nahrávku, tj. target, tak výsledky upadají, když to dáš rozpoznat modelu trénovaném v normálním nastavení (EMG na vstupu, skutečné audio na výstupu), protože při tiché artikulaci jsou ty EMG signály přece jen jiné. Tak dělali transfer learning: vyrobili nový korpus, ve kterém nahráli EMG signály téhož textu dvakrát, jednou s audiem a jednou jenom artikulaci, pak na sebe ty EMG signály napasovali a získali upravený target. Protože to nikdo ještě neudělal (silent speech je trochu díra na trhu, plus k tomu ta data doteď nebyla), tak ty výsledky ohromně poskočily: na closed vocabulary z 64% na 4% WER (!) a na open vocabulary měli mezi 88% a 68%.
+
+## Dlouhá verze
+
 **Digital voicing** je proces ozvučování němého záznamu mluvčího. Speciálnější variantou je **silent speech**, kdy mluvčí něco říkal beze zvuku, jen artikuloval. Zatímco v prvním případě máme tedy pro učení k dispozici skutečnou nahrávku toho, co bylo řečeno, v druhém případě nahrávka chybí, respektive je prázdná.
 
 K čemu je to dobré vůbec umět – pro ozvučování v situacích, kdy mluvčí nechce rušit své okolí, nebo je okolí tak rušné, že není možné promluvu vůbec zachytit, případně pro pacienty, kteří mluvit vůbec nemůžou.
