@@ -4,7 +4,7 @@ David Gaddy a Dan Klein
 
 EMNLP 2020 Best Paper Award
 
-[Původní článek https://www.aclweb.org/anthology/2020.emnlp-main.445/]
+[Původní článek](https://www.aclweb.org/anthology/2020.emnlp-main.445/)
 
 ## Krátká verze
 

@@ -4,7 +4,7 @@ Yanpeng Zhao a Ivan Titov
 
 EMNLP 2020 Honourable Mention
 
-[Původní článek|https://www.aclweb.org/anthology/2020.emnlp-main.354/]
+[Původní článek](https://www.aclweb.org/anthology/2020.emnlp-main.354/)
 
 **Grounded NLP** je oblast, která studuje vztah mezi přirozeným jazykem a vnímáním a akcí ve světě. Všeobecně je to tedy spojení NLP a nějakých multimodálních dat.
 
