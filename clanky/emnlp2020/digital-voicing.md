@@ -4,6 +4,8 @@ David Gaddy a Dan Klein
 
 EMNLP 2020 Best Paper Award
 
+[Původní článek|https://www.aclweb.org/anthology/2020.emnlp-main.445/]
+
 ## Krátká verze
 
 Digital Voicing of Silent Speech (https://arxiv.org/abs/2010.02960): dělali ozvučení nahrávky řeči podle signálů EMG (elektrody na obličeji), ale jenom tiché řeči, tj. artikulované. Protože v tom případě nemáš žádnou nahrávku, tj. target, tak výsledky upadají, když to dáš rozpoznat modelu trénovaném v normálním nastavení (EMG na vstupu, skutečné audio na výstupu), protože při tiché artikulaci jsou ty EMG signály přece jen jiné. Tak dělali transfer learning: vyrobili nový korpus, ve kterém nahráli EMG signály téhož textu dvakrát, jednou s audiem a jednou jenom artikulaci, pak na sebe ty EMG signály napasovali a získali upravený target. Protože to nikdo ještě neudělal (silent speech je trochu díra na trhu, plus k tomu ta data doteď nebyla), tak ty výsledky ohromně poskočily: na closed vocabulary snížili absolutní chybovost na slovech z 64% na 4% (!) a na open vocabulary snížili relativní chybu mezi 88% a 68%.
